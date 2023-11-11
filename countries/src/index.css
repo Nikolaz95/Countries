@@ -13,6 +13,7 @@ body {
 
 .headerContent {
     /* border: 1px solid ; */
+    text-align: center;
     border-radius: 80px;
     padding: 20px;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -22,10 +23,40 @@ body {
 }
 
 .overContent {
+    border: 1px solid black;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-top: 100px;
+    margin: 15px;
+}
+
+
+.dropdown-menu {
+    width: 100%;
+    padding: 17px 15px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.showDrop {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    top: 4rem;
+    padding: 17px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.region:hover {
+    background-color: aquamarine;
 }
 
 

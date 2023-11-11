@@ -5,6 +5,13 @@
 import React from 'react'
 import Flag from '../assets/bih.png'
 
+
+
+import { AiOutlineArrowDown } from 'react-icons/ai';
+
+
+
+
 const HomePage = () => {
     return (
         <div>
@@ -19,10 +26,11 @@ const HomePage = () => {
 
                 <div class="dropdown-content">
                     <div class="dropdown-menu">
-                        <p>Filter By Reagion</p>
-                        <button></button>
+                        <p>Filter By Reagion </p>
+                        <span><AiOutlineArrowDown /></span>
                     </div>
-                    <div class="drop showDropDown">
+                    <div class="showDrop hideDrop">
+                        <p class="region">All</p>
                         <p class="region">Africa</p>
                         <p class="region">America</p>
                         <p class="region">Asia</p>

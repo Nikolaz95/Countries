@@ -11,6 +11,7 @@ import './index.css'
 import Header from './components/Header.jsx';
 import Root from './components/Root.jsx';
 import HomePage from './pages/HomePage.jsx';
+import CountriesId from './pages/CountriesId.jsx';
 
 
 
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />
+      },
+
+      {
+        path: "/country/:id",
+        element: <CountriesId />
       },
 
 /*       
