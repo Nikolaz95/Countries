@@ -28,8 +28,34 @@ body {
     justify-content: space-between;
     padding-top: 100px;
     margin: 15px;
+    align-items: center;
 }
 
+.form {
+    width: 300px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.form input {
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.form .searchIcon {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    font-size: 35px;
+    color: hsl(60, 100%, 50%)
+}
 
 .dropdown-menu {
     width: 100%;
@@ -53,6 +79,16 @@ body {
     cursor: pointer;
     font-size: 15px;
     gap: 10px;
+    align-items: center;
+}
+
+
+.arrowDrp {
+    transition: an 0.5s;
+}
+
+.rotatedArrow {
+    transform: rotate(180deg);
 }
 
 .region:hover {
@@ -66,7 +102,7 @@ body {
     gap: 20px;
     padding-top: 100px;
     padding-bottom: 500px;
-    
+    justify-items: center;
 }
 
 .card {
@@ -75,7 +111,7 @@ body {
     align-items: center;
     /* border: 1px solid black; */
     width: 300px;
-    height: 300px;
+    height: 370px;
     border-radius: 80px;
 background: linear-gradient(145deg, #e6e6e6, #ffffff);
 box-shadow:  10px 10px 15px #ebebeb,
@@ -84,12 +120,17 @@ box-shadow:  10px 10px 15px #ebebeb,
 
 
 .card img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 200px;
   }
 
 .cardBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
+    font-size: 20px;
+    gap: 15px;
 }
 
 .cardBottom p{
