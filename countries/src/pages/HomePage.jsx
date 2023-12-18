@@ -3,10 +3,10 @@
 
 
 import React, { useEffect, useState } from 'react'
-import Flag from '../assets/bih.png'
+import { NavLink, Link } from 'react-router-dom';
 
 
-
+/* icons */
 import { AiOutlineArrowUp, AiOutlineSearch } from 'react-icons/ai';
 
 
@@ -17,13 +17,27 @@ const HomePage = () => {
 
     const [searchValue, setSearchValue] = useState('');
     const [searchResults, setSearchResults] = useState([]);
+
     /* select type */
     const [selectedType, setSelectedType] = useState('all')
+
+
     /* show */
     const [filteredResults, setFilteredResults] = useState([]);
 
     /* funckija za dropdown */
     const [showDropdown, setShowDropdown] = useState(false);
+
+    /* funckija za select Country info */
+    const [selectedCountry, setSelectedCountry] = useState(null);
+
+
+
+    /* funckija za select Country info */
+    const handleCountryClick = (countryData) => {
+        setSelectedCountry(countryData);
+    };
+
 
 
     const selectRegion = (e) => {
@@ -84,10 +98,10 @@ const HomePage = () => {
                         </p>
                     </section>
                     {showDropdown && (
-                        <div onChange={selectRegion} className={`showDrop ${showDropdown ? 'active' : ''}`}>
+                        <div onClick={selectRegion} className={`showDrop ${showDropdown ? 'active' : ''}`}>
                             <option value="all" className="region">All</option>
                             <option value="africa" className="region">Africa</option>
-                            <option value="america" className="region">America</option>
+                            <option value="americas" className="region">America</option>
                             <option value="asia" className="region">Asia</option>
                             <option value="europe" className="region">Europe</option>
                             <option value="oceania" className="region">Oceania</option>
@@ -103,7 +117,9 @@ const HomePage = () => {
 
                     <div key={result.id} className="card">
                         <div className="cardTop">
-                            <img src={result.flags.png} alt="" />
+                            <NavLink key={result.id} to={`/country/${result.id}`}>
+                                <img src={result.flags.png} alt="" />
+                            </NavLink>
                         </div>
 
                         <div className="cardBottom">

@@ -29,6 +29,7 @@ body {
     padding-top: 100px;
     margin: 15px;
     align-items: center;
+    position: relative;
 }
 
 .form {
@@ -75,21 +76,28 @@ body {
     border-radius: 20px;
     top: 4rem;
     padding: 17px;
-    width: 100%;
+    width: 164px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
     gap: 10px;
     align-items: center;
+    position: absolute;
+    top: 158px; right: 0px;
+    background-color: white;
 }
 
 
+
+
 .arrowDrp {
-    transition: an 0.5s;
+    transition:  0.5s;
 }
 
 .rotatedArrow {
     transform: rotate(180deg);
 }
+
+
 
 .region:hover {
     background-color: aquamarine;
@@ -100,7 +108,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-    padding-top: 100px;
     padding-bottom: 500px;
     justify-items: center;
 }

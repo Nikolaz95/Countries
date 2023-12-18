@@ -1,11 +1,43 @@
 
 
+
+
+
+.headerCounId {
+    padding: 40px 50px;
+}
+
+
+.btn-back {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn-back svg {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    box-shadow: 5px 5px 100px 0px #616161;
+}
+
+
+
 .content-countryId {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 50px;
     padding-bottom: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -25,6 +57,11 @@
     /* justify-content: center; */
 }
 
+.info-right p{
+    font-weight: bold;
+    font-size: 25px;
+}
+
 
 .info-left {
     grid-area: left;
@@ -33,18 +70,30 @@
     justify-content: center;
 }
 
+.info-left p{
+    font-weight: bold;
+    font-size: 25px;
+}
+
 
 .info-botom {
     grid-area: bottom;
     display: flex;
     flex-direction: row;
+    font-weight: bold;
+    font-size: 25px;
     gap: 10px;
-
+    align-items: center;
 }
 
 .borders-countries {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
 
+.borders-countries p {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
 }
