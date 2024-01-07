@@ -9,6 +9,7 @@
 
 body {
     padding: 30px;
+    background-color: #def7ff;
 }
 
 .headerContent {
@@ -23,7 +24,6 @@ body {
 }
 
 .overContent {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
@@ -108,7 +108,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-    padding-bottom: 500px;
+    padding-bottom: 100px;
     justify-items: center;
 }
 
@@ -143,3 +143,22 @@ box-shadow:  10px 10px 15px #ebebeb,
 .cardBottom p{
     padding-bottom: 15px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination button {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.activePageButton {
+    background-color: #007bff; /* Set your desired background color for the active page */
+    color: #fff; /* Set your desired text color for the active page */
+    font-weight: bold; /* Optionally make the text bold for the active page */
+  }
