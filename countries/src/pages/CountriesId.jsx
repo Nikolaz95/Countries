@@ -82,69 +82,82 @@ const CountriesId = () => {
             <h1>Border Counties: </h1>
 
             <div className="borders-countries">
-              <p>
-                <img
-                  src={Flag}
-                  height={40}
-                  width={40}
-                  alt=""
-                  className="img-borderCountrt"
-                />{" "}
-                Croatia
-              </p>
-              <p>
-                <img
-                  src={Flag}
-                  height={40}
-                  width={40}
-                  alt=""
-                  className="img-borderCountrt"
-                />{" "}
-                Croatia
-              </p>
-              <p>
-                <img
-                  src={Flag}
-                  height={40}
-                  width={40}
-                  alt=""
-                  className="img-borderCountrt"
-                />{" "}
-                Croatia
-              </p>
-              <p>
-                <img
-                  src={Flag}
-                  height={40}
-                  width={40}
-                  alt=""
-                  className="img-borderCountrt"
-                />{" "}
-                Croatia
-              </p>
-              {/* <p>
-                <img
-                  src={Flag}
-                  height={40}
-                  width={40}
-                  alt=""
-                  className="img-borderCountrt"
-                />{" "}
-                Croatia
-              </p> */}
+              <NavLink to={``}>
+                <p>
+                  <img
+                    src={Flag}
+                    height={40}
+                    width={40}
+                    alt=""
+                    className="img-borderCountrt"
+                  />{" "}
+                  BiH
+                </p>
+              </NavLink>
+              <NavLink to={``}>
+                <p>
+                  <img
+                    src={Flag}
+                    height={40}
+                    width={40}
+                    alt=""
+                    className="img-borderCountrt"
+                  />{" "}
+                  BiH
+                </p>
+              </NavLink>
+              <NavLink to={``}>
+                <p>
+                  <img
+                    src={Flag}
+                    height={40}
+                    width={40}
+                    alt=""
+                    className="img-borderCountrt"
+                  />{" "}
+                  BiH
+                </p>
+              </NavLink>
+              <NavLink to={``}>
+                <p>
+                  <img
+                    src={Flag}
+                    height={40}
+                    width={40}
+                    alt=""
+                    className="img-borderCountrt"
+                  />{" "}
+                  BiH
+                </p>
+              </NavLink>
+              <NavLink to={``}>
+                <p>
+                  <img
+                    src={Flag}
+                    height={40}
+                    width={40}
+                    alt=""
+                    className="img-borderCountrt"
+                  />{" "}
+                  BiH
+                </p>
+              </NavLink>
             </div>
 
             <div className="country-location">
               <h1>Country Location:</h1>
               <div className="counrty-gogearth">
-                <p>
-                  <img src={Flag} alt="" className="img-borderCountrt" />
-                  <NavLink
-                    to={`https://www.google.com/maps/place/Bosna+i+Hercegovina/@43.9159841,17.6762169,8z/data=!3m1!4b1!4m6!3m5!1s0x134ba215c737a9d7:0x6df7e20343b7e90c!8m2!3d43.915886!4d17.679076!16zL20vMDE2NmI?entry=ttu`}
-                  >
+                <NavLink
+                  to={`https://www.google.com/maps/place/Bosna+i+Hercegovina/@43.9159841,17.6762169,8z/data=!3m1!4b1!4m6!3m5!1s0x134ba215c737a9d7:0x6df7e20343b7e90c!8m2!3d43.915886!4d17.679076!16zL20vMDE2NmI?entry=ttu`}
+                >
+                  <p>
+
+
+                    <img src={Flag} alt="" className="img-borderCountrt" />
+
                     Bosna i Hercegovina
-                  </NavLink>
-                </p>
+                  </p>
+                </NavLink>
               </div>
             </div>
           </div>
