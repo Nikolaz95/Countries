@@ -8,7 +8,7 @@
 }
 
 body {
-    padding: 30px;
+    /* padding: 30px; */
     background-color: #def7ff;
 }
 
@@ -97,7 +97,10 @@ body {
     transform: rotate(180deg);
 }
 
-
+.region {
+    width: 100%;
+    text-align: center;
+}
 
 .region:hover {
     background-color: aquamarine;
@@ -154,6 +157,8 @@ box-shadow:  10px 10px 15px #ebebeb,
     font-size: 30px;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    border: none;
 }
 
 
