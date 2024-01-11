@@ -68,7 +68,7 @@ const CountriesId = () => {
       <div className="content-countryId">
         <div className="content-left">
           <img
-            src={country.flagImg}
+            src={Flag}
             alt=""
             className="country-flag"
           />
@@ -78,24 +78,24 @@ const CountriesId = () => {
           <div className="content-insideRigth">
             <div className="info-right">
               <h1>Native name:</h1>
-              <strong>{country.name}</strong>
+              <strong>bosna</strong>
               <h1>Population:</h1>
-              <strong>{country.population}</strong>
+              <strong>3 000 000</strong>
               <h1>Region:</h1>
-              <strong>{country.region}</strong>
+              <strong>Europa</strong>
               <h1>Sub Region:</h1>
-              <strong>{country.subregion}</strong>
+              <strong>Europa</strong>
               <h1>Capital:</h1>
-              <strong>{country.capital}</strong>
+              <strong>Sarajevo</strong>
             </div>
 
             <div className="info-left">
               <h1>Top Level Domain:</h1>
-              <strong>{/* Replace with actual data */}</strong>
+              <strong>ba.</strong>
               <h1>Currencies:</h1>
-              <strong>{/* Replace with actual data */}</strong>
+              <strong>BAM</strong>
               <h1>Languages:</h1>
-              <strong>{/* Replace with actual data */}</strong>
+              <strong>Bosanski</strong>
             </div>
           </div>
 
@@ -103,20 +103,15 @@ const CountriesId = () => {
             <h1>Border Countries: </h1>
 
             <div className="borders-countries">
-              {country.borders.map((border) => (
-                <NavLink to={`/country/${border}`}>
-                  <p key={border}>
-                    <img
-                      src={Flag}
-                      height={40}
-                      width={40}
-                      alt=""
-                      className="img-borderCountrt"
-                    />{" "}
-                    {border}
-                  </p>
-                </NavLink>
-              ))}
+              <p >
+                <img
+                  src={Flag}
+                  height={40}
+                  width={40}
+                  alt=""
+                  className="img-borderCountrt"
+                />
+              </p>
             </div>
 
             <div className="country-location">
@@ -126,8 +121,8 @@ const CountriesId = () => {
                   to={`https://www.google.com/maps/place/${countryName}`}
                 >
                   <p>
-                    <img src={country.flagImg} alt="" className="img-borderCountrt" />
-                    {countryName}
+                    <img src={Flag} alt="" className="img-borderCountrt" />
+                    bosna
                   </p>
                 </NavLink>
               </div>
