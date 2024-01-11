@@ -1,59 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import React from "react";
+import { NavLink, } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Flag from "../assets/bih.png";
 import "./CountriesId.css";
 
 const CountriesId = () => {
-  const { countryName } = useParams();
-  const [country, setCountry] = useState({
-    name: "",
-    official: "",
-    flagImg: "",
-    population: 0,
-    region: "",
-    subregion: "",
-    capital: "",
-    currencies: {},
-    languages: [],
-    borders: [],
-  });
 
-  const apiUrl = "https://restcountries.com/v3.1/name/";
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${apiUrl}${countryName}`);
-        if (response.ok) {
-          const data = await response.json();
-          if (data.length > 0) {
-            const countryDetails = data[0];
-            setCountry({
-              name: countryDetails.name.common,
-              official: countryDetails.name.official,
-              flagImg: countryDetails.flags.png,
-              population: countryDetails.population,
-              region: countryDetails.region,
-              subregion: countryDetails.subregion,
-              capital: countryDetails.capital,
-              currencies: countryDetails.currencies,
-              languages: countryDetails.languages,
-              borders: countryDetails.borders,
-            });
-          } else {
-            console.error("Country not found");
-          }
-        } else {
-          console.error("Error fetching country details. Status:", response.status);
-        }
-      } catch (error) {
-        console.error("Error fetching country details:", error);
-      }
-    };
-
-    fetchData();
-  }, [countryName]);
 
   return (
     <>
@@ -117,14 +69,14 @@ const CountriesId = () => {
             <div className="country-location">
               <h1>Country Location:</h1>
               <div className="counrty-gogearth">
-                <NavLink
+                {/* <NavLink
                   to={`https://www.google.com/maps/place/${countryName}`}
-                >
-                  <p>
-                    <img src={Flag} alt="" className="img-borderCountrt" />
-                    bosna
-                  </p>
-                </NavLink>
+                > */}
+                <p>
+                  <img src={Flag} alt="" className="img-borderCountrt" />
+                  bosna
+                </p>
+                {/* </NavLink> */}
               </div>
             </div>
           </div>
